@@ -4,9 +4,9 @@ namespace App\Direction;
 
 abstract class Direction
 {
-    private $name;
-    private $stepX;
-    private $stepY;
+    protected $name;
+    protected $stepX;
+    protected $stepY;
 
     abstract public function left(): Direction;
     abstract public function right(): Direction;

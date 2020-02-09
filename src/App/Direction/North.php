@@ -11,12 +11,12 @@ class North extends Direction
         $this->stepY = 1;
     }
 
-    public function left()
+    public function left(): Direction
     {
         return new West();
     }
 
-    public function right()
+    public function right(): Direction
     {
         return new South();
     }

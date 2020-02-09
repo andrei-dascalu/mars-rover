@@ -7,7 +7,7 @@ class Coordinates
     private $x;
     private $y;
 
-    public function __create(int $x, int $y)
+    public function __construct(int $x, int $y)
     {
         $this->x = $x;
         $this->y = $y;
@@ -57,5 +57,10 @@ class Coordinates
     public function getY()
     {
         return $this->y;
+    }
+
+    public function newCoordinatesForStepSize(int $xStepSize, int $yStepSize)
+    {
+        return new Coordinates($this->x + $xStepSize, $this->y + $yStepSize);
     }
 }
