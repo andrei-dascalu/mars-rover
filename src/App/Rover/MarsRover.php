@@ -11,7 +11,9 @@ class MarsRover
 {
     /** @var Coordinates */
     private $currentCoordinates;
+    /** @var Direction */
     private $currentDirection;
+    /** @var Plateau */
     private $plateau;
     /** @var CommandParser */
     private $commandParser;

@@ -47,6 +47,6 @@ final class ParameterHandler
             return $rovers;
         }
 
-        throw new NoDataFileException('No input data file');
+        throw new NoDataFileException(sprintf('No input data file [%s]', $input));
     }
 }

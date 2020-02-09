@@ -18,6 +18,6 @@ class North extends Direction
 
     public function right(): Direction
     {
-        return new South();
+        return new East();
     }
 }
